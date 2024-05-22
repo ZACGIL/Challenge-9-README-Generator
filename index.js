@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 const { join } = require('path');
 const { writeFile } = require('fs/promises');
 
-// TODO: Create an array of questions for user input
 const questions = [
     "What is the title of your project?",
     "Enter a description for your project",
@@ -18,7 +16,6 @@ const questions = [
     "What is your email address?"
 ];
 
-// TODO: Create a function to write README file
 function createFile(fileName, data) {
     writeFile(
         join(__dirname, '.', 'output', `${fileName}.md`),
@@ -26,7 +23,6 @@ function createFile(fileName, data) {
     )
 }
 
-// TODO: Create a function to initialize app
 function init() {
     cli();
 }
