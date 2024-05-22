@@ -67,7 +67,7 @@ function cli() {
         {
             type: 'list',
             name: 'license',
-            choices: [ 'Apache 2.0', 'IBM', 'MIT' ],
+            choices: [ 'Apache 2.0 License', 'IBM Public License Version 1.0', 'The MIT License', 'Add your own later' ],
             message: questions[6]
         },
         {
@@ -89,7 +89,7 @@ function cli() {
     .then(() => {
         console.log('Generated your README file')
     })
-};
+}
 
 // Function call to initialize app
 init();
